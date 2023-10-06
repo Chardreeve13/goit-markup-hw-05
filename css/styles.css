@@ -727,7 +727,7 @@ transition: box-shadow var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     width: 408px;
     height: 584px;
-    background-color: var(--white);
+    background-color: var(--dairy);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 
                 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -740,27 +740,26 @@ transition: box-shadow var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
+    background-color: var(--cornflower);
     border: 0px;
-    border-radius: 50px;
-    width: 30px;
-    height: 30px;
+    border-radius: 24px;
+    width: 24px;
+    height: 24px; 
     position: absolute;
-    right:-30px;
-    left: 100%;
-    top: 0px;
+    right: 24px;
+    top: 24px;
+    stroke-width: 1px;
     cursor: pointer;
 }
-
+.modal-close:hover {
+    background-color: var(--ocean);
+    border-radius: 50px;
+}
 .modal.is-hidden{
     visibility: hidden;
     opacity: 0px;
     pointer-events: none;
 }
 .modal.is-hidden .modal-content{
-    transform: translate(-20px);
-}
-
-.modal.is-hidden .modal-content{
-    transform: translateY(-20px);
+    transform: translate(0px);
 }
